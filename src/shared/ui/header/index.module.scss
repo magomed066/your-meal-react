@@ -1,0 +1,69 @@
+.header {
+    background: #FFAB08;
+    padding: 2.4rem;
+    height: 43.3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(61% 30rem at 50% 9rem, #FFAB08 100%, transparent 75%) no-repeat;
+
+    @media (max-width: 760px) {
+        background: radial-gradient(93% 34rem at 50% 9rem, #FFAB08 100%, transparent 75%) no-repeat;
+    }
+
+    &-logo {
+        position: relative;
+        max-width: 15rem;
+        height: 3rem;
+        padding: 0;
+        margin: 0 auto;
+
+        &__icon {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .intro {
+        display: flex;
+
+        &-info {
+            max-width: 43rem;
+            color: white;
+
+            &__title {
+                font-weight: 700;
+                font-size: 5rem;
+                margin-bottom: 5rem;
+
+                span {
+                    color: #FF5C00;
+                }
+            }
+
+        }
+
+        &-img {
+            position: relative;
+
+            @media (max-width: 760px) {
+                display: none;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                height: 2rem;
+                bottom: 0;
+                width: 16.3rem;
+                left: 7rem;
+                border-radius: 65%;
+                background: #F2A40C;
+                transform: matrix(1, 0, 0, -1, 0, 0);
+            }
+        }
+    }
+}
