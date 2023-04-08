@@ -1,7 +1,7 @@
+import { Routing } from '@/pages'
 import { withProviders } from './providers'
+import './scss/index.scss'
 
-const App = () => {
-	return <h1>asd</h1>
-}
+const App = () => <Routing />
 
 export default withProviders(App)
