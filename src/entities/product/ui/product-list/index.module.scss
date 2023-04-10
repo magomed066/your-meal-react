@@ -1,0 +1,13 @@
+.products {
+
+    &-list {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        margin-bottom: 2.4rem;
+        font-size: 4rem;
+    }
+}

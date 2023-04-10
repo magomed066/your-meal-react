@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
 
     @media (max-width: 760px) {
         font-size: 56.5%;
@@ -20,4 +21,18 @@ body {
     background-color: #F2F2F3;
     font-size: 1.6rem;
     font-family: 'Nunito', sans-serif;
+}
+
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 133.1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
 }
